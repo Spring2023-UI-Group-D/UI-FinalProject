@@ -1,4 +1,4 @@
-#To work on this repo
+# To work on this repo
 open up vs code
 type (ctrl + shift + tilde) to open vscode command line
 mkdir ui-website
