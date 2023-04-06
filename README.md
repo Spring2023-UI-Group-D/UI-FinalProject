@@ -16,7 +16,7 @@ git checkout -b "name-of-branch"
 git switch [tab][tab]
 ```
 
-### Do not switch to the main branch ever
+## Do not switch to the main branch ever
 
 # Push files to a branch
 ```
@@ -33,7 +33,7 @@ git push
 5. this should merge changes from the branch you were working on to the main branch.
 6. click on delete branch once pull request is successfully merged and closed.
 
-### Local branches don't get deleted automatically
+# Local branches don't get deleted automatically
 # To delete the local branch only if it has been pushed or merged
 ```
 git branch -d <branch> 
