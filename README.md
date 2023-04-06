@@ -7,17 +7,23 @@
 7. cd ui-website/ 
 
 # Create a new branch for a feature
+```
 git checkout -b "name-of-branch"
+```
 
 # Switch to an existing branch
+```
 git switch [tab][tab]
+```
 
 # Do not switch to the main branch ever
 
 # Push files to a branch
-1. git add . 
-2. git commit -m "message"
-3. git push
+```
+git add . 
+git commit -m "message"
+git push
+```
 
 # Pull request and merge to main
 1. from main dropdown, click on the branch you were working on. 
@@ -27,10 +33,13 @@ git switch [tab][tab]
 5. this should merge changes from the branch you were working on to the main branch.
 6. click on delete branch once pull request is successfully merged and closed.
 
-# Local branches don't get deleted automatically
+**Local branches don't get deleted automatically**
 # To delete the local branch only if it has been pushed or merged
+```
 git branch -d <branch> 
+```
 # To delete a local branch no matter what
+```
 git branch -D <branch> 
-
-# You can delete remote branches from the github ui
+```
+**You can delete remote branches from the github ui**
