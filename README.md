@@ -1,7 +1,7 @@
 ## To work on this repo
 1. open up vs code
-2. type (ctrl + shift + ` ) to open vscode command line
-3. type these commands
+2. (ctrl + shift + ` ) to open vscode command line
+3. type these commands in
 ```
 mkdir ui-website
 cd ui-website
@@ -29,12 +29,12 @@ git push
 ```
 
 ## Pull request and merge to main
-1. from main dropdown, click on the branch you were working on. 
-2. see the file changes that were done.
-3. it should open a pull request automatically and you just need to click merge accept. 
-4. if it doesn't, click on 1 commit ahead, then click create pull request, then merge accept.
-5. this should merge changes from the branch you were working on to the main branch.
-6. click on delete branch once pull request is successfully merged and closed.
+1. From main dropdown, click on the branch you were working on. 
+2. See the file changes that were done.
+3. It should open a pull request automatically and you just need to click merge accept. 
+4. If it doesn't, click on 1 commit ahead, then click create pull request, then merge accept.
+5. This should merge changes from the branch you were working on to the main branch.
+6. After the pull request is merged and closed, a delete branch button will popup, click on delete branch
 
 ### Local branches don't get deleted automatically
 ## To delete the local branch only if it has been pushed or merged
