@@ -16,7 +16,7 @@ git checkout -b "name-of-branch"
 git switch [tab][tab]
 ```
 
-# Do not switch to the main branch ever
+### Do not switch to the main branch ever
 
 # Push files to a branch
 ```
