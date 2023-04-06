@@ -12,6 +12,7 @@ cd ui-website/
 ## Create a new branch for a feature
 ```
 git checkout -b "name-of-branch"
+git push --set-upstream origin <name-of-branch>
 ```
 
 ## Switch to an existing branch
