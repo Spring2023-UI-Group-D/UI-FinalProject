@@ -42,4 +42,4 @@ git branch -d <branch>
 ```
 git branch -D <branch> 
 ```
-**You can delete remote branches from the github ui**
+### You can delete remote branches from the github ui
