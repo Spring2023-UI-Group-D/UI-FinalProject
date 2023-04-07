@@ -19,6 +19,15 @@ git push --set-upstream origin <name-of-branch>
 ```
 git switch [tab][tab]
 ```
+## To see the latest changes
+```
+git fetch
+```
+## If you want the latest changes to go to your local
+```
+git merge
+```
+
 ## Push files to a branch
 ```
 git add . 
