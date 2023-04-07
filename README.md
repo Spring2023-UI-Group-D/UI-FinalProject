@@ -27,8 +27,8 @@ git push
 ```
 
 ## Merge to main
-After a push, a pull request will popup.
-A pull request requires at least one reviewer to accept for it to go through. 
+After a push, a pull request will popup.  
+A pull request requires at least one reviewer to accept for it to go through.  
 After the request is merged and closed, click "Delete branch"
 
 ### Local branches don't get deleted automatically
