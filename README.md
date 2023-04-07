@@ -19,9 +19,6 @@ git push --set-upstream origin <name-of-branch>
 ```
 git switch [tab][tab]
 ```
-
-### Do not switch to the main branch ever
-
 ## Push files to a branch
 ```
 git add . 
@@ -30,12 +27,11 @@ git push
 ```
 
 ## Pull request and merge to main
-1. From main dropdown, click on the branch you were working on. 
-2. See the file changes that were done.
-3. It should open a pull request automatically and you just need to click merge accept. 
-4. If it doesn't, click on 1 commit ahead, then click create pull request, then merge accept.
-5. This should merge changes from the branch you were working on to the main branch.
-6. After the pull request is merged and closed, a delete branch button will popup, click on delete branch to delete remote branch.
+When you want to add the changes you worked on to go to the main branch. 
+Push to the branch you are on right now, then an option for a pull request will pop up.
+A pull request requires at least one reviewer to accept for it to go through. 
+
+
 
 ### Local branches don't get deleted automatically
 ## To delete the local branch only if it has been pushed or merged
