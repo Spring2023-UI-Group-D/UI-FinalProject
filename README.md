@@ -27,8 +27,8 @@ git push
 ```
 
 ## Pull request and merge to main
-When you want to add the changes you worked on to go to the main branch. 
-Push to the branch you are on right now, then an option for a pull request will pop up.
+When you want to add the changes you worked on to go to the main branch.  
+Push to the branch you are on right now, then an option for a pull request will pop up  
 A pull request requires at least one reviewer to accept for it to go through. 
 
 
