@@ -26,12 +26,10 @@ git commit -m "message"
 git push
 ```
 
-## Pull request and merge to main
-When you want to add the changes you worked on to go to the main branch.  
-Push to the branch you are on right now, then an option for a pull request will pop up  
+## Merge to main
+After a push, a pull request will popup.
 A pull request requires at least one reviewer to accept for it to go through. 
-
-
+After the request is merged and closed, click "Delete branch"
 
 ### Local branches don't get deleted automatically
 ## To delete the local branch only if it has been pushed or merged
