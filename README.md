@@ -11,14 +11,13 @@
 git clone https://github.com/Spring2023-UI-Group-D/UI-FinalProject.git
 cd UI-FinalProject/
 ```
-### You are now connected to the repo. To make changes to the repo, check out the commands below.
+### You are now connected to the repo. To make changes to the repo you can use the github website or command line in vscode.
 
 ## If you want to make a new branch and work on another part of the project
 ```
 git checkout -b "name-of-branch"
 git push --set-upstream origin <name-of-branch>
 ```
-You can also make or delete branches from the github ui.
 
 ## To see the available active branches and switch to one
 ```
@@ -44,5 +43,10 @@ git push
 After a git push, a pull request will popup.  
 A pull request requires at least one reviewer to accept for it to go through.  
 After the request is merged and closed, click "Delete branch" popup to delete the branch from github.
+
+## To delete a branch
+```
+git branch -D <branch>
+```
 
 # finalproject
