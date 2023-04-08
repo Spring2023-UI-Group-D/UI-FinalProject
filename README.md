@@ -1,4 +1,4 @@
-## To connect to the repository
+## Getting started
 1. open vscode
 2. make a folder named ui-repo
 3. open that folder on vscode
@@ -11,6 +11,7 @@
 git clone https://github.com/Spring2023-UI-Group-D/UI-FinalProject.git
 cd UI-FinalProject/
 ```
+### You are now connected to the repo. To make changes to the repo check out the commands below  
 
 ## If you want to make a new branch and work on another thing
 ```
