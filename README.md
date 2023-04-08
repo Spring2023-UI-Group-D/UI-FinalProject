@@ -38,15 +38,11 @@ git add .
 git commit -m "message"
 git push
 ```
+### You can add or delete branches from the github ui.
 
 ## Merge the branch you are currently in to main
 After a git push, a pull request will popup.  
 A pull request requires at least one reviewer to accept for it to go through.  
-After the request is merged and closed, click "Delete branch" popup to delete the remote branch from github.
-### Local branches in your workspace don't get deleted automatically
-## To delete a local branch
-```
-git branch -D <branch> 
-```
-### You can add and delete remote branches from the github ui
+After the request is merged and closed, click "Delete branch" popup to delete the branch from github.
+
 # finalproject
