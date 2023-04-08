@@ -3,7 +3,7 @@
 2. make a folder named ui-repo
 3. open that folder on vscode
 
-## Next, Open the command line
+## Next, open the command line.
 (ctrl + shift + ` )
 
 ## Finally, copy over the code to your workspace
@@ -11,9 +11,9 @@
 git clone https://github.com/Spring2023-UI-Group-D/UI-FinalProject.git
 cd UI-FinalProject/
 ```
-### You are now connected to the repo. To make changes to the repo check out the commands below  
+### You are now connected to the repo. To make changes to the repo, check out the commands below.
 
-## If you want to make a new branch and work on another thing
+## If you want to make a new branch and work on another part of the project
 ```
 git checkout -b "name-of-branch"
 git push --set-upstream origin <name-of-branch>
@@ -48,5 +48,5 @@ After the request is merged and closed, click "Delete branch" popup to delete th
 ```
 git branch -D <branch> 
 ```
-### You can delete remote branches from the github ui
+### You can add and delete remote branches from the github ui
 # finalproject
