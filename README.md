@@ -5,7 +5,7 @@
 ```
 mkdir ui-website
 cd ui-website
-git clone https://github.com/raphaelsalak/ui-website.git
+git clone https://github.com/Spring2023-UI-Group-D/UI-FinalProject.git
 cd ui-website/ 
 ```
 
