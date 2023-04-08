@@ -18,6 +18,7 @@ cd UI-FinalProject/
 git checkout -b "name-of-branch"
 git push --set-upstream origin <name-of-branch>
 ```
+You can also make or delete branches from the github ui.
 
 ## To see the available active branches and switch to one
 ```
@@ -38,7 +39,6 @@ git add .
 git commit -m "message"
 git push
 ```
-### You can add or delete branches from the github ui.
 
 ## Merge the branch you are currently in to main
 After a git push, a pull request will popup.  
