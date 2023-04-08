@@ -11,7 +11,7 @@
 git clone https://github.com/Spring2023-UI-Group-D/UI-FinalProject.git
 cd UI-FinalProject/
 ```
-## You are now successfully connected to the repository. If you want to make changes to the repository check out the commands below.
+### You are now successfully connected to the repository. If you want to make changes to the repository check out the commands below.
 
 ## If you want to make a new branch and work on another thing
 ```
