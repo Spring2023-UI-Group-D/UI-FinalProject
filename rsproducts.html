@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Products Page</title>
+  </head>
+  <body>
+    <h1>Products Page</h1>
+    <div>
+      <h2>Product 1</h2>
+      <p>Price: $19.99</p>
+      <button id="product-1-btn" onclick="showProductDetails(1)">View Details</button>
+    </div>
+    <div>
+      <h2>Product 2</h2>
+      <p>Price: $29.99</p>
+      <button id="product-2-btn" onclick="showProductDetails(2)">View Details</button>
+    </div>
+    <div>
+      <h2>Product 3</h2>
+      <p>Price: $39.99</p>
+      <button id="product-3-btn" onclick="showProductDetails(3)">View Details</button>
+    </div>
+    
+    <script>
+      function showProductDetails(productId) {
+        window.location.href = `productdetails.html?id=${productId}`;
+      }
+    </script>
+  </body>
+</html>
