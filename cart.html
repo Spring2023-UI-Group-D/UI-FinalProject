@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+  <h1>Shopping Cart</h1>
+  <div id="cart-details"></div>
+
+  <script>
+    // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('productId');
+    const quantity = urlParams.get('quantity');
+	const price = urlParams.get('price');
+
+    // Display the cart details on the page
+    const cartDetailsDiv = document.querySelector('#cart-details');
+    const cartDetailsHTML = `<p>Product ID: ${productId}</p><p>Quantity: ${quantity}</p><p>Price: ${price}</p>`;
+    cartDetailsDiv.innerHTML = cartDetailsHTML;
+  </script>
+</body>
+</html>
