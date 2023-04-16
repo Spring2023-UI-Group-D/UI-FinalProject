@@ -4,8 +4,16 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 </head>
-
 <body>
 	<h1>You are now logged out. Close all tabs.</h1>
+	<button onClick="reset()">home</button>
 </body>
 </html>
+<script>
+function reset(){
+	sessionStorage.clear();
+	window.location.href = "index.html";
+}
+
+
+</script>

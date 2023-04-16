@@ -38,7 +38,10 @@
 	<div id="navbar"></div>
 	<div class="page-section masthead2" style="font-family: 'Inter',sans-serif;">
 		<div class="container h-50">
-			<h1 style="color: black; text-align: center;"> Shoes </h1>
+				<h1 style="color: black; text-align: center;"> Shoes </h1>
+				<input type="text" id="search-input">
+				<button onclick="search()">Search</button>
+				<ul id="results-list"></ul>
 		</div>
 	</div>
 
@@ -109,7 +112,7 @@
 								<div class="card-body text-center">
 									<img src="assets/images/coffee_item7.jpg" class="product-image">
 									<h5 class="card-title" style="text-align: left; color: bl; color: black;"><b>$50.99</b></h5>
-									<p class="tags" style="text-align: left;">Reebok BB 4000</p>
+									<p class="tags" style="text-align: left;">Nike1</p>
 									<p class="card-text small" style="text-align: left;">Women's basketball shoes designed for extreme comfort</p>
 									
 									<a href="#" target="_blank" class="btn btn-success button-text" id="product-1-btn" onclick="showProductDetails(1)"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
@@ -122,7 +125,7 @@
 								<div class="card-body text-center">
 									<img src="assets/images/coffee_item7.jpg" class="product-image">
 									<h5 class="card-title" style="text-align: left; color: bl; color: black;"><b>$50.99</b></h5>
-									<p class="tags" style="text-align: left;">Reebok BB 4000</p>
+									<p class="tags" style="text-align: left;">Jordan2</p>
 									<p class="card-text small" style="text-align: left;">Women's basketball shoes designed for extreme comfort</p>
 									
 									<a href="#" target="_blank" class="btn btn-success button-text" onclick="showProductDetails(2)"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
@@ -135,7 +138,7 @@
 								<div class="card-body text-center">
 									<img src="assets/images/coffee_item7.jpg" class="product-image">
 									<h5 class="card-title" style="text-align: left; color: bl; color: black;"><b>$50.99</b></h5>
-									<p class="tags" style="text-align: left;">Reebok BB 4000</p>
+									<p class="tags" style="text-align: left;">PG3</p>
 									<p class="card-text small" style="text-align: left;">Women's basketball shoes designed for extreme comfort</p>
 									
 									<a href="#" target="_blank" class="btn btn-success button-text" onclick="showProductDetails(3)"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
@@ -155,7 +158,7 @@
 								<div class="card-body text-center">
 									<img src="assets/images/coffee_item7.jpg" class="product-image">
 									<h5 class="card-title" style="text-align: left; color: bl; color: black;"><b>$50.99</b></h5>
-									<p class="tags" style="text-align: left;">Reebok BB 4000</p>
+									<p class="tags" style="text-align: left;">Nike3</p>
 									<p class="card-text small" style="text-align: left;">Women's basketball shoes designed for extreme comfort</p>
 									
 									<a href="#" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
@@ -243,6 +246,32 @@
 	<div>&nbsp;</div>
 	<div>&nbsp;</div>
 	<script>
+	   const users = [
+        { name: "Nike1", },
+        { name: "Jordan2" },
+        { name: "Nike3" },
+        { name: "PG3" }
+      ];
+
+      function searchUsers(users, searchTerm) {
+        return users.filter(user => {
+          return user.name.toLowerCase().includes(searchTerm.toLowerCase());//the function is user.name.tolowercase.includes, the current value is searchterm.tolowercase
+        });
+      }
+
+      function search() {
+        const searchTerm = document.getElementById("search-input").value;
+        const results = searchUsers(users, searchTerm);
+
+        const resultsList = document.getElementById("results-list");
+        resultsList.innerHTML = "";
+
+        results.forEach(result => {
+          const div = document.createElement("div");
+          div.textContent = result.name;
+          resultsList.appendChild(div);
+        });
+      }
       function showProductDetails(productId) {
         window.location.href = `productdetails.html?id=${productId}`;
       }
