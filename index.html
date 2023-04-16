@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plaza</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/coreystyle.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/raphaelstyle.css">
+		
+	</head>
+	<body>
+		<div class="content">
+			<div class="menus">
+				<a id="logo" href="index.html">PL</a>
+				<div class="floor1">	
+					<a id="btn" href="login.html">Sign In</a>
+					<script>
+					if(window.sessionStorage.getItem("userType") == "user"){
+						document.getElementById("btn").innerHTML = '<a id="btn" href="logout.html">logout</a>' + '<a id="btn" href="accountinfo.html">account info</a>';
+					}
+					</script>	
+					<a id="btn" href="about.html">Join Us</a>
+					<a id="btn" href="help.html">Help</a>
+					<a id="btn" href="product.html">Products</a>
+					<script>
+						if(window.sessionStorage.getItem("userType") == "admin"){
+							document.getElementById("btn").innerHTML = '<a id="btn" href="adminHome.html">Admin Home</a> ' + '<a id="btn" href="logout.html">logout</a>';
+						}
+					</script>	
+				</div>
+				<div class="floor2">
+					<div id="searchbar">
+						<div id="searchicon"><img src="imgs/search.png"></div>
+						<input id="search" type="text" placeholder="Type To Search ..."></input>
+					</div>
+					<div id="btns">
+						<a id="btn" href="#"><img src="imgs/shoppingcart.png"></a>
+						<a id="btn" href="#"><img src="imgs/heart.png"></a>
+					</div>
+				</div>
+				<div class="categories">
+					<category>Electronics</category>
+					<category>a</category>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
