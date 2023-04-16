@@ -1,52 +1,81 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>product details</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--script type="text/javascript">
-   $(document).ready(function(){
-    $( "#header" ).load( "../files/header.html" );   
-   });
-</script-->
-</head>
-<body>
-<div id="header"></div>
-	
-	
-	<div class="container-fluid p-5">
-		<div class="row mb-3 justify-content-md-center">
-   			<h2>productname</h2>
-				<div class="col-sm-4">
-					<img src="assets/images/shoes.jpg" alt="dogimage"  width="600px"  class="float-start d-block rounded" img>
+	<head>
+	<meta charset="utf-8">
+	<title>product details</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--script type="text/javascript">
+	   $(document).ready(function(){
+		$( "#header" ).load( "../files/header.html" );   
+	   });
+	</script-->
+	</head>
+	<body>
+	<div id="header"></div>
+
+
+		<div class="container-fluid p-5">
+			<div class="row mb-3 justify-content-md-center">
+				<h2>productname</h2>
+					<div class="col-sm-4">
+						<img src="assets/images/shoes.jpg" alt="dogimage"  width="600px"  class="float-start d-block rounded" img>
+					</div>
+				<div class="col-sm-8">
+					<h3>Name</h3>
+					<h2>Price</h2>
+					<h3>Product details</h3>
+					<div id="product-details">
+					</div>
+					<button onclick="addToCart()">add to cart</button>
 				</div>
-			<div class="col-sm-8">
-				<h3>Name</h3>
-				<h2>Price</h2>
-				<h3>Product details</h3>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim </p>
-				<button id="button" onclick="addToCart()">add to cart</button>
 			</div>
 		</div>
-	</div>	
-</body>
-<script>
-//passes the product details data to checkout page so checkout can compute total
-function addToCart() {
-  // Get the product details
-  const productId = '123';
-  const quantity = 1;
-  const price = 19.99;
-  // Other product details
+	<script>
+      // Retrieve the product ID from the URL query string
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
 
-  // Create the URL with the product details as parameters
-  const url = `cart.html?productId=${productId}&quantity=${quantity}&price=${price}`;
+      // Get the product details based on the product ID
+      const productDetails = getProductDetails(productId);
 
-  // Set the href attribute of the Add to Cart button
-  document.querySelector('#button').href = url;
-  // redirects to checkout and has the data in the url
-  window.location.href = url;
-}
-</script>
+      // Display the product details on the page
+      const productDetailsDiv = document.querySelector('#product-details');
+      const productName = document.createElement('h2');
+      const productPrice = document.createElement('p');
+      const productDescription = document.createElement('p');
+      productName.textContent = productDetails.name;
+      productPrice.textContent = `Price: $${productDetails.price.toFixed(2)}`;
+      productDescription.textContent = productDetails.description;
+      productDetailsDiv.appendChild(productName);
+      productDetailsDiv.appendChild(productPrice);
+      productDetailsDiv.appendChild(productDescription);
+
+      // Function to retrieve product details based on the product ID
+      function getProductDetails(id) {
+        const products = [
+          { id: 1, name: 'Product 1', price: 19.99, description: 'This is product 1.' },
+          { id: 2, name: 'Product 2', price: 29.99, description: 'This is product 2.' },
+          { id: 3, name: 'Product 3', price: 39.99, description: 'This is product 3.' }
+        ];
+        return products.find(product => product.id == id);
+      }
+	 function addToCart() {
+
+		const productDetails = getProductDetails(productId);
+		// Get the existing cart items from local storage
+		let cartItems = localStorage.getItem('cartItems');
+		cartItems = cartItems ? JSON.parse(cartItems) : [];
+
+		// Add the new product to the cart items array
+		cartItems.push(productDetails);
+
+		// Store the updated cart items in local storage
+		localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+		// Redirect to the shopping cart page
+		window.location.href = 'cart.html';
+	  }
+	</script>
+	</body>
 </html>
