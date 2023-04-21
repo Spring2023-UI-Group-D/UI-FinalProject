@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 200vh;
+    height: 300vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -72,6 +72,8 @@ header{
 
 .progress-checkout-container{
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
     width: 60%;
@@ -135,6 +137,7 @@ header{
     width: 60%;
     margin-top: 6rem;
     display: flex;
+    float: left;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -166,7 +169,7 @@ header{
 
 label{
     font-size: 16px;
-    color: grey;
+    color: black;
     margin-bottom: 0.5rem;
 }
 
@@ -210,4 +213,72 @@ input[type="button"]{
 
 input[type="button"]:hover{
     background-color: rgb(4, 88, 167);
+}
+
+
+
+/*------cart item details-------*/
+.cart page{
+    margin: 80px;
+    width: 40%;
+    float: right;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 100px;
+    margin: right;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th :last-child{
+    text-align: right;
 }

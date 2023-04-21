@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hunterstyle.css">
     <title>Complete your purchase</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
         <tr>
             <td>
                 <div class="cart-info">
-                    <img src="UI-FinalProject/assets/images/shoes.jpg" alt="">
+                    <img src="assets/images/shoes.jpg" alt="">
                     <div>
                         <p>Nike Air Force 1</p>
                         <small>Price: $50.00</small>
@@ -42,10 +42,26 @@
                     </div>
                 </div>
             </td>
-            <td><input type="number" value="1">Product Name</td>
+            <td><input type="number" value="1"></td>
             <td>$50.00</td>
         </tr>
     </table>
+
+    <div class="total-price"></div>
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$4.06</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$54.06</td>
+            </tr>
+        </table>
 </div>
 
 
@@ -146,7 +162,7 @@
                 <label for="name">Email</label>
                 <input type="text" name="name" id="name" placeholder="johnnyappleseed@gmail.com">
             </div>
-             <input type="button" value="Complete purchase" onClick="window.location='orderplaced.html'">
+            <input type="button" value="Complete purchase" onClick="window.location='orderplaced.html'">
         </form>
     </div>
 

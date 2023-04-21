@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<title>Plaza</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/nav.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/home.css">
-		<script src="assets/js/plaza.js"></script>
+		<link rel="stylesheet" type="text/css" href="nav.css">
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<script src="plaza.js"></script>
 	</head>
 	<body onload = start()>
 		<div class="home">
 			<div class="nav">
-				<a id="logo" href="index.html">PL</a>
+				<a id="logo" href="plaza-home.html">PL</a>
 				<div class="floor1">
 					<a id="btn" href="login.html">Sign In</a>
 					<script>
@@ -17,8 +17,8 @@
 						document.getElementById("btn").innerHTML = '<a id="btn" href="logout.html">logout</a>' + '<a id="btn" href="accountinfo.html">account info</a>';
 					}
 					</script>
-					<a id="btn" href="about.html">Join Us</a>
-					<a id="btn" href="help.html">Help</a>
+					<a id="btn" href="#">Join Us</a>
+					<a id="btn" href="#">Help</a>
 					<a id="btn" href="product.html">Products</a>
 					<script>
 						if(window.sessionStorage.getItem("userType") == "admin"){
@@ -28,12 +28,12 @@
 				</div>
 				<div class="floor2">
 					<div id="searchbar">
-						<div id="searchicon"><img src="assets/images/search.png"></div>
+						<div id="searchicon"><img src="imgs/search.png"></div>
 						<input id="search" type="text" placeholder="Type To Search ..."></input>
 					</div>
 					<div id="btns">
-						<a id="btn" href="cart.html"><img src="assets/images/shoppingcart.png"></a>
-						<a id="btn" href="#"><img src="assets/images/heart.png"></a>
+						<a id="btn" href="plaza-cart.html"><img src="imgs/shoppingcart.png"></a>
+						<a id="btn" href="#"><img src="imgs/heart.png"></a>
 					</div>
 				</div>
 				<div class="floor3">
