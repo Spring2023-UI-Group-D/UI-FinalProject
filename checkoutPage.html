@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/hunterstyle.css">
+    <title>Complete your purchase</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Checkout</h1>
+        <ul class="menu-container">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">Collections</li>
+            <li class="menu-item">Products</li>
+            <li class="menu-item red">For Sale</li>
+        </ul>
+        <div class="menu-icons-container">
+           <img src="assets/images/Search.svg" alt="" class="icon"> 
+           <img src="assets/images/Profile.svg" alt="" class="icon"> 
+           <img src="assets/Cart.svg" alt="" class="icon"> 
+        </div>
+    </header>
+
+    <div class="progress-checkout-container">
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Shipping</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Payment</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Review</span>
+        </div>
+    </div>
+    
+    <div class="form-container">
+        <h2 class="form-title">Payment Details</h2>
+        <form action="" class="checkout-form">
+            <div class="input-line">
+                <label for="name">Name on card</label>
+                <input type="text" name="name" id="name" placeholder="Your name and surname">
+            </div>
+            <div class="input-line">
+                <label for="name">Card number</label>
+                <input type="text" name="name" id="name" placeholder="1111-2222-3333-4444">
+            </div>
+            <div class="input-container">
+                <div class="input-line">
+                    <label for="name">Expiring Date</label>
+                    <input type="text" name="name" id="name" placeholder="09-21">
+                </div>
+                <div class="input-line">
+                    <label for="name">CVC</label>
+                    <input type="text" name="name" id="name" placeholder="***">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2 class="form-title">Shipping Details</h2>
+        <form action="" class="checkout-form">
+            <div class="input-line">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" placeholder="Johnny">
+            </div>
+            <div class="input-line">
+                <label for="name">Last Name</label>
+                <input type="text" name="name" id="name" placeholder="Appleseed">
+            </div>
+            <div class="input-line">
+                <label for="name">Shipping Address</label>
+                <input type="text" name="name" id="name" placeholder="123 Mulberry Street">
+            </div>
+            <div class="input-line">
+                <label for="name">Apartment/Unit Number (optional)</label>
+                <input type="text" name="name" id="name" placeholder="Unit 12B">
+            </div>
+            <div class="input-container">
+                <div class="input-line">
+                    <label for="name">City</label>
+                    <input type="text" name="name" id="name" placeholder="San Antonio">
+                </div>
+                <div class="input-line">
+                    <label for="name">State</label>
+                    <input type="text" name="name" id="name" placeholder="TX">
+                </div>
+            <div class="input-line">
+                <label for="name">Zip Code</label>
+                <input type="text" name="name" id="name" placeholder="12345">
+            </div>
+            </div>
+            <input type="button" value="Complete purchase" onClick="window.location='orderplaced.html'">
+        </form>
+    </div>
+
+</body>
+</html>
