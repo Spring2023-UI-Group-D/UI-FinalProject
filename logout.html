@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
+<div style="text-align: right;">
+    <button class="button" style="vertical-align: middle" ><span>Dark-Mode </span></button>
+	</div>
 </head>
 <body>
 	<h1>You are now logged out. Close all tabs.</h1>
@@ -45,7 +48,27 @@
             </div>
         </div>
     </div>
-</footer> 	
+</footer> 
+<script>
+    // Select the button
+    const btn = document.querySelector(".button");
+    // Select the stylesheet <link>
+    const theme = document.querySelector("#theme-link");
+
+    // Listen for a click on the button
+    btn.addEventListener("click", function() {
+        // If the current URL contains "ligh-theme.css"
+        if (theme.getAttribute("href") == "assets/css/claystyle.css") {
+            // ... then switch it to "dark-theme.css"
+            theme.href = "assets/css/claystyle-dark.css";
+        // Otherwise...
+        } 
+        else {
+            // ... switch it to "light-theme.css"
+            theme.href = "assets/css/claystyle.css";
+        }
+    });
+</script>	
 </html>
 <script>
 function reset(){
